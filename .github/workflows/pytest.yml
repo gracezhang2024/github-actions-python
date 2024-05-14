@@ -1,5 +1,5 @@
 name: pytest
-on: workflow-dispatch
+on: workflow_dispatch
 
 jobs:
   pytest:
