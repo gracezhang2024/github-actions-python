@@ -13,7 +13,7 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v4
       - name: post - checkout
-        - run: |
+        run: |
           pwd
           ls -lh
       - name: install pytest
