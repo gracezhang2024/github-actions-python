@@ -2,15 +2,14 @@ name: pytest
 on: workflow_dispatch
 
 jobs:
+
   pytest:
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: clone repository
         run: |
-          pwd
-          git clone git@github.com:gracezhang2024/github-actions-python.git
+          git clone https://github.com/xiaopeng163/github-actions-python
           cd github-actions-python
-          pwd
       - name: install pytest
         run: pip install pytest
       - name: run pytest
